@@ -1,0 +1,14 @@
+@function Str-replace($string, $search, $replace: "") {
+  $index: str-index($string, $search);
+
+  @if $index {
+    @return str-slice($string, 1, $index - 1) + $replace + Str-replace(str-slice($string, $index + str-length($search)), $search, $replace);
+  }
+
+  @return $string;
+}
+
+@function Rem($target) {
+  @if $target == 0 { @return 0; }
+  @return $target / $font_size-base + 0rem;
+}

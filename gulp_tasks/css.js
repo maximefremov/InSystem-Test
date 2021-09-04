@@ -5,7 +5,7 @@ module.exports = function(gulp, plugins, bs, settings) {
   return function () {
     return gulp.src(settings.development.css_Path + '**/!(_)*' + settings.extCss).pipe(plugins.debug({title: 'src sass: '}))
     // Обрабатываем ошибки
-    .pipe(plugins.if(settings.isDev, plugins.plumber()))
+    //.pipe(plugins.if(settings.isDev, plugins.plumber()))
     // Инициализируем Sourcemap (для Dev режима)
     .pipe(plugins.if(settings.isDev, plugins.sourcemaps.init()))
     // Компилируем Sass в Css

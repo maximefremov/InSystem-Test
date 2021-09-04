@@ -1,0 +1,76 @@
+@mixin Font-face($name, $path, $weight: null, $style: null, $exts: otf eot woff2 woff ttf svg) {
+  $src: null;
+
+  $extmods: (
+    eot: "?",
+    svg: "#" + str-replace($name, " ", "_")
+  );
+
+  $formats: (
+    otf: "opentype",
+    ttf: "truetype"
+  );
+
+  @each $ext in $exts {
+    $extmod: if(map-has-key($extmods, $ext), $ext + map-get($extmods, $ext), $ext);
+    $format: if(map-has-key($formats, $ext), map-get($formats, $ext), $ext);
+    $src: append($src, url(quote($path + "." + $extmod)) format(quote($format)), comma);
+  }
+
+  @font-face {
+    font-family: quote($name);
+    font-style: $style;
+    font-weight: $weight;
+    font-display: swap;
+    src: $src;
+  }
+}
+
+@mixin Transition($speed, $property: all) {
+  @if $speed == 1 {
+    $speed: 160ms;
+  } @else if $speed == 2 {
+    $speed: 260ms;
+  } @else if $speed == 3 {
+    $speed: 360ms;
+  } @else if $speed == 4 {
+    $speed: 460ms;
+  }
+  transition: $property $speed ease-in-out 0ms;
+}
+
+@mixin Pos-abs {
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+@mixin Screen-xs {
+
+  @media only screen and (max-width: #{$screen_xs-max}) {
+    @content;
+  }
+}
+
+@mixin Screen-sm {
+
+  @media only screen and (max-width: #{$screen_sm-max}) {
+    @content;
+  }
+}
+
+@mixin Screen-md {
+
+  @media only screen and (max-width: #{$screen_md-max}) {
+    @content;
+  }
+}
+
+@mixin Screen-lg {
+
+  @media only screen and (max-width: #{$screen_lg-max}) {
+    @content;
+  }
+}

@@ -1,0 +1,27 @@
+.container {
+  margin: 0 auto;
+  max-width: $container_lg-max;
+  padding: 0 15px;
+  width: 100%;
+}
+
+@include Screen-lg {
+
+  .container {
+    max-width: $container_md-max;
+  }
+}
+
+@include Screen-md {
+
+  .container {
+    max-width: $container_sm-max;
+  }
+}
+
+@include Screen-sm {
+
+  .container {
+    max-width: $container_xs-max;
+  }
+}
