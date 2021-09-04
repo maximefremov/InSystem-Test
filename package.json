@@ -1,0 +1,55 @@
+{
+  "name": "insystem-test",
+  "version": "1.0.0",
+  "description": "InSystem Test",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "Build": "gulp Build",
+    "Watch": "gulp Watch",
+    "Watch Build": "gulp Watch_Build",
+    "Clean": "gulp Clean",
+    "_assets": "gulp _assets",
+    "_html": "gulp _html",
+    "_css": "gulp _css",
+    "_cssVendor": "gulp _cssVendor",
+    "_js": "gulp _js",
+    "_jsVendor": "gulp _jsVendor"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/maximefremov/InSystem-Test.git"
+  },
+  "author": "Maxim Efremov",
+  "license": "ISC",
+  "homepage": "https://maximefremov.github.io/insystem-test/",
+  "devDependencies": {
+    "@babel/core": "^7.15.5",
+    "@babel/preset-env": "^7.15.4",
+    "browser-sync": "^2.27.5",
+    "caniuse-lite": "^1.0.30001254",
+    "del": "^6.0.0",
+    "eslint": "^7.32.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-babel": "^8.0.0",
+    "gulp-cssmin": "^0.2.0",
+    "gulp-debug": "^4.0.0",
+    "gulp-if": "^3.0.0",
+    "gulp-load-plugins": "^2.0.7",
+    "gulp-plumber": "^1.2.1",
+    "gulp-rename": "^2.0.0",
+    "gulp-sass": "^5.0.0",
+    "gulp-sourcemaps": "^3.0.0",
+    "sass": "^1.39.0",
+    "stylelint": "^13.13.1",
+    "stylelint-config-sass-guidelines": "^8.0.0",
+    "stylelint-scss": "^3.20.1"
+  },
+  "dependencies": {
+    "jquery": "^3.6.0",
+    "selectric": "^1.13.0"
+  }
+}
