@@ -1,0 +1,14 @@
+.header__logo {
+  font-family: $font_name-second;
+  font-size: Rem(28px);
+  font-weight: 800;
+  line-height: Rem(28px);
+  text-transform: uppercase;
+
+  &_link {
+    color: $color_base-white;
+  }
+  &-blue {
+    color: $color_blue-20;
+  }
+}

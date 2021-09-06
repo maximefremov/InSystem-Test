@@ -7,21 +7,53 @@
   <meta name="robots" content="noindex, nofollow">
   <title>InSystem Test</title>
   <meta name="description" content="InSystem Test Page">
-  <script src="/js/jquery.min.js"></script>
-  <script src="/js/jquery.selectric.min.js"></script>
   <script src="/js/script.min.js"></script>
   <link href="/css/style.min.css" rel="stylesheet">
 </head>
 <body>
   <header class="header">
     <div class="container">
-
+      <div class="header--inner">
+        <div class="header__logo">
+          <a class="header__logo_link" href="/">
+            Loremipsum.<span class="header__logo-blue">net</span>
+          </a>
+        </div>
+        <nav class="header__menu">
+          <a class="header__menu_item" href="#">Бизнес</a>
+          <a class="header__menu_item" href="#">О нас</a>
+          <a class="header__menu_item" href="#">Цены</a>
+          <a class="header__menu_item" href="#checkout">Оформить заказ</a>
+        </nav>
+      </div>
     </div>
   </header>
-  <main></main>
+  <main>
+    <section id="hero" class="block hero">
+      <picture class="block__bg">
+        <source srcset="/assets/images/hero-bg-sm.webp" media="(max-width: 768px)" type="image/webp">
+        <source srcset="/assets/images/hero-bg-sm.png" media="(max-width: 768px)">
+        <source srcset="/assets/images/hero-bg.webp" type="image/webp">
+        <img class="block__bg_img" src="/assets/images/hero-bg.jpg" alt="">
+      </picture>
+      <div class="container">
+
+
+      </div>
+    </section>
+    <section id="checkout" class="block checkout">
+      <picture class="block__bg">
+        <source srcset="/assets/images/checkout-bg.webp" type="image/webp">
+        <img class="block__bg_img" src="/assets/images/checkout-bg.jpg" alt="">
+      </picture>
+      <div class="container">
+        Checkout
+      </div>
+    </section>
+  </main>
   <footer class="footer">
     <div class="container">
-
+      Footer
     </div>
   </footer>
 </body>

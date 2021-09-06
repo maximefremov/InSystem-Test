@@ -33,10 +33,7 @@ class Settings {
     };
 
     this.cssVendors = [];
-    this.jsVendors = [
-      './node_modules/selectric/public/jquery.selectric.min.js',
-      './node_modules/jquery/dist/jquery.min.js'
-    ];
+    this.jsVendors = [];
   }
 
 }

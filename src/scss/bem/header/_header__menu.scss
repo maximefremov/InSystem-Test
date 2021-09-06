@@ -1,0 +1,50 @@
+.header__menu {
+  display: flex;
+  font-size: Rem(13px);
+  font-weight: 600;
+  text-transform: uppercase;
+
+  &_item {
+    @include Transition(2, color);
+    color: $color_base-white;
+
+    &:hover {
+      color: $color_blue-10;
+    }
+  }
+  &_item + &_item {
+    margin-left: 60px;
+  }
+}
+
+@include Screen-lg {
+
+  .header__menu {
+
+    &_item + &_item {
+      margin-left: 45px;
+    }
+  }
+}
+
+@include Screen-md {
+
+  .header__menu {
+
+    &_item + &_item {
+      margin-left: 30px;
+    }
+  }
+}
+
+@include Screen-sm {
+
+  .header__menu {
+    flex-direction: column;
+
+    &_item + &_item {
+      margin-left: 0;
+    }
+  }
+}
+

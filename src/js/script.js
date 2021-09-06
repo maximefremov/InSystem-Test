@@ -1,3 +1,0 @@
-$(function() {
-  $('.selectric').selectric();
-});
