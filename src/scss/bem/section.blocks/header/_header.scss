@@ -1,3 +1,6 @@
+@import "header__logo";
+@import "header__menu";
+
 .header {
   background-color: rgba($color_midnight-40, 0.9);
   height: 100px;
@@ -15,5 +18,26 @@
     display: flex;
     height: 100%;
     justify-content: space-between;
+  }
+}
+
+@include Screen-lg {
+
+  .header {
+    height: 90px;
+  }
+}
+
+@include Screen-md {
+
+  .header {
+    height: 80px;
+  }
+}
+
+@include Screen-xs {
+
+  .header {
+    height: 70px;
   }
 }

@@ -10,5 +10,5 @@
 
 @function Rem($target) {
   @if $target == 0 { @return 0; }
-  @return $target / $font_size-base + 0rem;
+  @return math.div($target, $font_size-base) + 0rem;
 }

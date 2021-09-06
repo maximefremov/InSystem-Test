@@ -1,0 +1,21 @@
+.content__list {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  margin: 0 0 10px;
+
+  &_item {
+    align-items: baseline;
+    display: inline-flex;
+
+    &::before {
+      background-color: $color_base-black;
+      content: "";
+      height: 2px;
+      margin: 0 10px 0 8px;
+      position: relative;
+      top: -5px;
+      width: 5px;
+    }
+  }
+}

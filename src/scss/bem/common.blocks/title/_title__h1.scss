@@ -1,0 +1,27 @@
+.title__h1 {
+  font-size: Rem(48px);
+  line-height: 1.2;
+  margin: 0;
+  text-transform: uppercase;
+}
+
+@include Screen-lg {
+
+  .title__h1 {
+    font-size: Rem(42px);
+  }
+}
+
+@include Screen-md {
+
+  .title__h1 {
+    font-size: Rem(38px);
+  }
+}
+
+@include Screen-xs {
+
+  .title__h1 {
+    font-size: Rem(34px);
+  }
+}

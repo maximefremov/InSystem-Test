@@ -12,3 +12,24 @@
     color: $color_blue-20;
   }
 }
+
+@include Screen-lg {
+
+  .header__logo {
+    font-size: Rem(26px);
+  }
+}
+
+@include Screen-md {
+
+  .header__logo {
+    font-size: Rem(24px);
+  }
+}
+
+@include Screen-xs {
+
+  .header__logo {
+    font-size: Rem(22px);
+  }
+}

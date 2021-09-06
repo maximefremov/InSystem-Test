@@ -1,0 +1,54 @@
+@import "hero__title";
+@import "hero__content";
+@import "hero__buttons";
+
+.hero {
+  background: $color_base-black;
+  padding: 200px 0;
+  position: relative;
+
+  &--inner {
+    max-width: 60%;
+    position: relative;
+    z-index: $zindex-10;
+  }
+}
+
+@include Screen-lg {
+
+  .hero {
+    padding: 180px 0;
+  }
+}
+
+@include Screen-md {
+
+  .hero {
+    padding: 160px 0;
+
+    &--inner {
+      max-width: 70%;
+    }
+  }
+}
+
+@include Screen-sm {
+
+  .hero {
+    padding: 140px 0;
+
+    &--inner {
+      max-width: 80%;
+    }
+  }
+}
+
+@include Screen-xs {
+
+  .hero {
+
+    &--inner {
+      max-width: 100%;
+    }
+  }
+}

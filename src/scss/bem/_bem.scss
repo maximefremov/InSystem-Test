@@ -1,12 +1,11 @@
-@import "elements/container";
-@import "elements/block";
-@import "elements/button";
+@import "common.blocks/container";
+@import "common.blocks/button";
+@import "common.blocks/section/section";
+@import "common.blocks/title/title";
+@import "common.blocks/content/content";
 
-@import "header/header";
-@import "header/header__logo";
-@import "header/header__menu";
+@import "section.blocks/header/header";
+@import "section.blocks/footer/footer";
 
-@import "footer/footer";
-
-@import "sections/hero";
-@import "sections/checkout";
+@import "section.blocks/hero/hero";
+@import "section.blocks/checkout/checkout";

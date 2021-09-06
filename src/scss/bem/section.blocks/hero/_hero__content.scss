@@ -1,0 +1,11 @@
+.hero__content {
+  color: $color_base-black;
+  font-size: Rem(20px);
+}
+
+@include Screen-sm {
+
+  .hero__content {
+    font-size: Rem(18px);
+  }
+}

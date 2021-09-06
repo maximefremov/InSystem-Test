@@ -1,0 +1,39 @@
+.hero__buttons {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 80px;
+
+  &_item {
+    min-width: 180px;
+  }
+  &_item + &_item {
+    margin-left: 30px;
+  }
+}
+
+@include Screen-md {
+
+  .hero__buttons {
+    margin-top: 60px;
+
+    &_item + &_item {
+      margin-left: 20px;
+    }
+  }
+}
+
+@include Screen-xs {
+
+  .hero__buttons {
+    margin-top: 40px;
+    max-width: 280px;
+
+    &_item {
+      width: 100%;
+    }
+    &_item + &_item {
+      margin-left: 0;
+      margin-top: 10px;
+    }
+  }
+}
