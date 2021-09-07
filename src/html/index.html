@@ -7,8 +7,8 @@
   <meta name="robots" content="noindex, nofollow">
   <title>InSystem Test</title>
   <meta name="description" content="InSystem Test Page">
-  <script src="/js/script.min.js"></script>
-  <link href="/css/style.min.css" rel="stylesheet">
+  <script src="/script.min.js"></script>
+  <link href="/style.min.css" rel="stylesheet">
 </head>
 <body>
   <header class="header">
@@ -18,8 +18,14 @@
           <a class="header__logo_link" href="/">
             Loremipsum.<span class="header__logo-blue">net</span>
           </a>
+
         </div>
-        <nav class="header__menu">
+        <button class="header__menu_toggle header__menu_toggle--active">
+          <span class="header__menu_toggle-line"></span>
+          <span class="header__menu_toggle-line"></span>
+          <span class="header__menu_toggle-line"></span>
+        </button>
+        <nav class="header__menu header__menu--active">
           <a class="header__menu_item" href="#">Бизнес</a>
           <a class="header__menu_item" href="#">О нас</a>
           <a class="header__menu_item" href="#">Цены</a>

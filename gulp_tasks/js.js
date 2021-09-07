@@ -1,7 +1,7 @@
 // ================ Babel > JS ==================
 module.exports = function (gulp, plugins, bs, settings) {
   return function () {
-    return gulp.src(settings.development.js_Path + '**/!(_)*' + settings.extJs).pipe(plugins.debug({title: 'src js: '}))
+    return gulp.src(settings.development.js_Path + '**/*' + settings.extJs).pipe(plugins.debug({title: 'src js: '}))
     // Обрабатываем ошибки
     //.pipe(plugins.if(settings.isDev, plugins.plumber()))
     // Инициализируем Sourcemap (для Dev режима)
@@ -10,8 +10,8 @@ module.exports = function (gulp, plugins, bs, settings) {
     .pipe(plugins.babel({
       presets: ['@babel/env']
     })).pipe(plugins.debug({title: 'babel: '}))
-    // Добавляем суффикс
-    .pipe(plugins.rename({ suffix: '.min' }))
+    // Конкатенация всех JS файлов в один
+    .pipe(plugins.concat('script.min.js'))
     // Пишем на диск Sourcemap (для Dev режима)
     .pipe(plugins.if(settings.isDev, plugins.sourcemaps.write('.'))).pipe(plugins.if(settings.isDev, plugins.debug({title: 'sourcemaps: '})))
     // Пишем файлы в Prod директорию

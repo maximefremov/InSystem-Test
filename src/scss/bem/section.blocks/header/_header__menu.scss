@@ -17,6 +17,35 @@
   }
 }
 
+.header__menu_toggle {
+  display: none;
+  margin-right: -10px;
+  padding: 10px;
+
+  &-line {
+    @include Transition(3);
+    background-color: $color_base-white;
+    display: block;
+    height: 3px;
+    margin-left: auto;
+    width: 30px;
+  }
+  &-line + &-line {
+    margin-top: 6px;
+  }
+  &--active &-line {
+    background-color: $color_blue-10;
+  }
+  &--active &-line:nth-child(2) {
+    background-color: lighten($color_blue-10, 15);
+    width: 24px;
+  }
+  &--active &-line:nth-child(3) {
+    background-color: lighten($color_blue-10, 30);
+    width: 18px;
+  }
+}
+
 @include Screen-lg {
 
   .header__menu {
@@ -40,11 +69,41 @@
 @include Screen-sm {
 
   .header__menu {
+    @include Transition(3);
+    background: $color_midnight-10;
     flex-direction: column;
+    font-size: Rem(14px);
+    height: 100vh;
+    max-width: 260px;
+    opacity: 0;
+    padding: 15px 0;
+    position: absolute;
+    right: 0;
+    top: 80px;
+    transform: translate3d(100%, 0, 0);
+    visibility: hidden;
+    width: 100%;
 
+    &--active {
+      opacity: 1;
+      transform: translate3d(0, 0, 0);
+      visibility: visible;
+    }
+    &_item {
+      padding: 10px 20px;
+    }
     &_item + &_item {
       margin-left: 0;
+    }
+    &_toggle {
+      display: block;
     }
   }
 }
 
+@include Screen-xs {
+
+  .header__menu {
+    top: 70px;
+  }
+}

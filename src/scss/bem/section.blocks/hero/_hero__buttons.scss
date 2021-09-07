@@ -1,4 +1,5 @@
 .hero__buttons {
+  align-items: flex-start;
   display: flex;
   flex-wrap: wrap;
   margin-top: 80px;
@@ -26,7 +27,7 @@
 
   .hero__buttons {
     margin-top: 40px;
-    max-width: 280px;
+    max-width: 290px;
 
     &_item {
       width: 100%;

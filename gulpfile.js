@@ -27,8 +27,8 @@ class Settings {
     this.production_Path = './docs/';
     this.production = {
       html_Path:          this.production_Path + '',
-      css_Path:           this.production_Path + 'css/',
-      js_Path:            this.production_Path + 'js/',
+      css_Path:           this.production_Path + '',
+      js_Path:            this.production_Path + '',
       assets_Path:        this.production_Path + 'assets/'
     };
 
@@ -60,7 +60,7 @@ gulp.task('_assets', getTask('assets'));
 
 // Очистка Production дирректории
 gulp.task('Clean', function () {
-  return del(settings.production_Path);
+  return del(settings.production_Path + '**/*');
 });
 
 // Сборка проекта
