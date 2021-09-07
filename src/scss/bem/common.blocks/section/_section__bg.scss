@@ -2,7 +2,7 @@
   @include Pos-abs;
   display: flex;
 
-  &_img {
+  &-img {
     object-fit: cover;
     width: 100%;
   }

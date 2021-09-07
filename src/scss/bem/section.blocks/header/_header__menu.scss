@@ -4,7 +4,7 @@
   font-weight: 600;
   text-transform: uppercase;
 
-  &_item {
+  &-item {
     @include Transition(2, color);
     color: $color_base-white;
 
@@ -12,12 +12,12 @@
       color: $color_blue-10;
     }
   }
-  &_item + &_item {
+  &-item + &-item {
     margin-left: 60px;
   }
 }
 
-.header__menu_toggle {
+.header__menu-toggle {
   display: none;
   margin-right: -10px;
   padding: 10px;
@@ -50,7 +50,7 @@
 
   .header__menu {
 
-    &_item + &_item {
+    &-item + &-item {
       margin-left: 50px;
     }
   }
@@ -60,7 +60,7 @@
 
   .header__menu {
 
-    &_item + &_item {
+    &-item + &-item {
       margin-left: 40px;
     }
   }
@@ -89,13 +89,13 @@
       transform: translate3d(0, 0, 0);
       visibility: visible;
     }
-    &_item {
+    &-item {
       padding: 10px 20px;
     }
-    &_item + &_item {
+    &-item + &-item {
       margin-left: 0;
     }
-    &_toggle {
+    &-toggle {
       display: block;
     }
   }

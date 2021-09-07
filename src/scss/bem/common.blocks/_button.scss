@@ -14,14 +14,13 @@
   &:hover {
     background-color: darken($color_base-white, 6);
   }
-}
+  &--blue {
+    background-color: $color_blue-30;
+    border-color: $color_base-white;
+    color: $color_base-white;
 
-.button-blue {
-  background-color: $color_blue-30;
-  border-color: $color_base-white;
-  color: $color_base-white;
-
-  &:hover {
-    background-color: lighten($color_blue-30, 6);
+    &:hover {
+      background-color: lighten($color_blue-30, 6);
+    }
   }
 }

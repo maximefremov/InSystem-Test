@@ -10,26 +10,25 @@
   <script src="/script.min.js"></script>
   <link href="/style.min.css" rel="stylesheet">
 </head>
-<body>
+<body class="body">
   <header class="header">
-    <div class="container">
-      <div class="header--inner">
+    <div class="container header__container">
+      <div class="header__inner">
         <div class="header__logo">
-          <a class="header__logo_link" href="/">
-            Loremipsum.<span class="header__logo-blue">net</span>
+          <a class="header__logo-link" href="/">
+            Loremipsum.<span class="header__logo--blue">net</span>
           </a>
-
         </div>
-        <button class="header__menu_toggle">
-          <span class="header__menu_toggle-line"></span>
-          <span class="header__menu_toggle-line"></span>
-          <span class="header__menu_toggle-line"></span>
+        <button class="header__menu-toggle">
+          <span class="header__menu-toggle-line"></span>
+          <span class="header__menu-toggle-line"></span>
+          <span class="header__menu-toggle-line"></span>
         </button>
         <nav class="header__menu">
-          <a class="header__menu_item" href="#">Бизнес</a>
-          <a class="header__menu_item" href="#">О нас</a>
-          <a class="header__menu_item" href="#">Цены</a>
-          <a class="header__menu_item" href="#checkout">Оформить заказ</a>
+          <a class="header__menu-item" href="#">Бизнес</a>
+          <a class="header__menu-item" href="#">О нас</a>
+          <a class="header__menu-item" href="#">Цены</a>
+          <a class="header__menu-item" href="#checkout">Оформить заказ</a>
         </nav>
       </div>
     </div>
@@ -40,27 +39,27 @@
         <source srcset="/assets/images/hero-bg-sm.webp" media="(max-width: 768px)" type="image/webp">
         <source srcset="/assets/images/hero-bg-sm.png" media="(max-width: 768px)">
         <source srcset="/assets/images/hero-bg.webp" type="image/webp">
-        <img class="section__bg_img" src="/assets/images/hero-bg.jpg" alt="Hero background">
+        <img class="section__bg-img" src="/assets/images/hero-bg.jpg" alt="Hero background">
       </picture>
       <div class="container">
-        <div class="hero--inner">
+        <div class="hero__inner">
           <h1 class="title__h1 hero__title">
-            <span class="hero__title-blue">Lorem ipsum </span>dolor sit amet consectetur
-            <span class="hero__title-blue">adipiscing</span>
+            <span class="title--blue">Lorem ipsum </span>dolor sit amet consectetur
+            <span class="title--blue">adipiscing</span>
           </h1>
           <div class="hero__content content">
             <p class="content__para">
               <strong>At vero eos et accusamus et iusto odio dignissimos ducimus!</strong>
             </p>
             <ul class="content__list">
-              <li class="content__list_item">Totam rem aperiam eaque ipsa</li>
-              <li class="content__list_item">Sit voluptatem accusantium doloremque laudantium</li>
-              <li class="content__list_item">Sed ut perspiciatis, unde omnis iste natus error</li>
+              <li class="content__list-item">Totam rem aperiam eaque ipsa</li>
+              <li class="content__list-item">Sit voluptatem accusantium doloremque laudantium</li>
+              <li class="content__list-item">Sed ut perspiciatis, unde omnis iste natus error</li>
             </ul>
           </div>
           <div class="hero__buttons">
-            <button class="button button-blue hero__buttons_item">Заказать</button>
-            <a class="button hero__buttons_item" href="#">Подробнее</a>
+            <button class="button button--blue hero__buttons-item">Заказать</button>
+            <a class="button hero__buttons-item" href="#">Подробнее</a>
           </div>
         </div>
       </div>
@@ -68,10 +67,91 @@
     <section id="checkout" class="section checkout">
       <picture class="section__bg">
         <source srcset="/assets/images/checkout-bg.webp" type="image/webp">
-        <img class="section__bg_img" src="/assets/images/checkout-bg.jpg" alt="Checkout background">
+        <img class="section__bg-img" src="/assets/images/checkout-bg.jpg" alt="Checkout background">
       </picture>
       <div class="container">
-        Checkout
+        <div class="checkout__inner">
+          <h2 class="title__h2 section__title">Оформление <span class="title--blue">заказа</span></h2>
+          <p class="section__desc">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
+
+          <div class="features">
+
+            <figure class="features__item">
+              <div class="features__item-inner">
+                <div class="icon-circle features__circle">
+                  <img class="icon-circle__img features__img" src="/assets/icons/checkout/loupe.svg">
+                </div>
+                <div class="features__ellipses">
+                  <span class="features__ellipses-item"></span>
+                  <span class="features__ellipses-item"></span>
+                  <span class="features__ellipses-item"></span>
+                  <span class="features__ellipses-item"></span>
+                  <span class="features__ellipses-item"></span>
+                </div>
+              </div>
+              <figcaption class="features__desc">Lorem ipsum dolor sit amet</figcaption>
+            </figure>
+
+            <figure class="features__item">
+              <div class="features__item-inner">
+                <div class="icon-circle features__circle">
+                  <img class="icon-circle__img features__img" src="/assets/icons/checkout/loupe.svg">
+                </div>
+                <div class="features__ellipses">
+                  <span class="features__ellipses-item"></span>
+                  <span class="features__ellipses-item"></span>
+                  <span class="features__ellipses-item"></span>
+                  <span class="features__ellipses-item"></span>
+                  <span class="features__ellipses-item"></span>
+                </div>
+              </div>
+              <figcaption class="features__desc">Lorem ipsum dolor sit amet</figcaption>
+            </figure>
+
+            <figure class="features__item">
+              <div class="features__item-inner">
+                <div class="icon-circle features__circle">
+                  <img class="icon-circle__img features__img" src="/assets/icons/checkout/loupe.svg">
+                </div>
+                <div class="features__ellipses">
+                  <span class="features__ellipses-item"></span>
+                  <span class="features__ellipses-item"></span>
+                  <span class="features__ellipses-item"></span>
+                  <span class="features__ellipses-item"></span>
+                  <span class="features__ellipses-item"></span>
+                </div>
+              </div>
+              <figcaption class="features__desc">Lorem ipsum dolor sit amet</figcaption>
+            </figure>
+
+            <figure class="features__item">
+              <div class="features__item-inner">
+                <div class="icon-circle features__circle">
+                  <img class="icon-circle__img features__img" src="/assets/icons/checkout/loupe.svg">
+                </div>
+                <div class="features__ellipses">
+                  <span class="features__ellipses-item"></span>
+                  <span class="features__ellipses-item"></span>
+                  <span class="features__ellipses-item"></span>
+                  <span class="features__ellipses-item"></span>
+                  <span class="features__ellipses-item"></span>
+                </div>
+              </div>
+              <figcaption class="features__desc">Lorem ipsum dolor sit amet</figcaption>
+            </figure>
+
+            <figure class="features__item">
+              <div class="features__item-inner">
+                <div class="icon-circle features__circle">
+                  <img class="icon-circle__img features__img" src="/assets/icons/checkout/loupe.svg">
+                </div>
+              </div>
+              <figcaption class="features__desc">Lorem ipsum dolor sit amet</figcaption>
+            </figure>
+
+          </div>
+
+        </div>
       </div>
     </section>
   </main>

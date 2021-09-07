@@ -1,7 +1,6 @@
 class App {
 
   constructor() {
-    const self = this;
     const BREAKPOINTS = {
       'XS': 576,
       'SM': 769,

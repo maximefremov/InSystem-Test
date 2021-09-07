@@ -1,4 +1,8 @@
 .checkout {
   background-color: $color_midnight-20;
-  height: 500px;
+
+  &__inner {
+    position: relative;
+    z-index: $zindex-10;
+  }
 }

@@ -1,1 +1,9 @@
 @import "title__h1";
+@import "title__h2";
+
+.title {
+
+  &--blue {
+    color: $color_blue-30;
+  }
+}

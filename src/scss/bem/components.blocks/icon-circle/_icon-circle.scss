@@ -1,0 +1,16 @@
+@import "icon-circle__img";
+
+.icon-circle {
+  align-items: center;
+  background-color: $color_blue-30;
+  border: 5px solid $color_blue-40;
+  border-radius: 50%;
+  display: flex;
+  height: 100px;
+  justify-content: center;
+  width: 100px;
+
+  &__img {
+    max-width: 35px;
+  }
+}

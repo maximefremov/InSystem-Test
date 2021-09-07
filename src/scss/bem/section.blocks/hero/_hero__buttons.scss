@@ -4,10 +4,10 @@
   flex-wrap: wrap;
   margin-top: 80px;
 
-  &_item {
+  &-item {
     min-width: 180px;
   }
-  &_item + &_item {
+  &-item + &-item {
     margin-left: 30px;
   }
 }
@@ -17,7 +17,7 @@
   .hero__buttons {
     margin-top: 60px;
 
-    &_item + &_item {
+    &-item + &-item {
       margin-left: 20px;
     }
   }
@@ -29,10 +29,10 @@
     margin-top: 40px;
     max-width: 290px;
 
-    &_item {
+    &-item {
       width: 100%;
     }
-    &_item + &_item {
+    &-item + &-item {
       margin-left: 0;
       margin-top: 10px;
     }

@@ -1,3 +1,4 @@
+@import "common.blocks/body";
 @import "common.blocks/container";
 @import "common.blocks/overlay";
 @import "common.blocks/button";
@@ -7,6 +8,9 @@
 
 @import "section.blocks/header/header";
 @import "section.blocks/footer/footer";
+
+@import "components.blocks/icon-circle/icon-circle";
+@import "components.blocks/features/features";
 
 @import "section.blocks/hero/hero";
 @import "section.blocks/checkout/checkout";

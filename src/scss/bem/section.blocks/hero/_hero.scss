@@ -7,7 +7,7 @@
   padding: 200px 0;
   position: relative;
 
-  &--inner {
+  &__inner {
     max-width: 60%;
     position: relative;
     z-index: $zindex-10;
@@ -26,7 +26,7 @@
   .hero {
     padding: 160px 0;
 
-    &--inner {
+    &__inner {
       max-width: 70%;
     }
   }
@@ -37,7 +37,7 @@
   .hero {
     padding: 140px 0;
 
-    &--inner {
+    &__inner {
       max-width: 80%;
     }
   }
@@ -47,7 +47,7 @@
 
   .hero {
 
-    &--inner {
+    &__inner {
       max-width: 100%;
     }
   }

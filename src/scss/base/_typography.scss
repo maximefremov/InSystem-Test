@@ -6,20 +6,6 @@ html {
   box-sizing: inherit;
 }
 
-body {
-  color: $color_base-white;
-  font: 400 #{$font_size-base}/1.5 $font_name-base;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  margin: 0;
-  min-width: 320px;
-  position: relative;
-
-  &.fixed {
-    overflow: hidden;
-  }
-}
-
 a {
   text-decoration: none;
 }
@@ -33,4 +19,12 @@ ul {
   list-style: none;
   margin: 0;
   padding: 0;
+}
+
+h1, h2 {
+  margin: 0;
+}
+
+figure {
+  margin: 0;
 }

@@ -4,7 +4,7 @@ class HeaderMenu {
     // Классы
     this.menuClass = 'header__menu';
     this.menuActiveClass = this.menuClass + '--active';
-    this.menuToggleClass = 'header__menu_toggle';
+    this.menuToggleClass = 'header__menu-toggle';
     this.menuToggleActiveClass = this.menuToggleClass + '--active';
 
     // Элементы

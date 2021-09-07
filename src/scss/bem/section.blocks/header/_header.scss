@@ -10,10 +10,10 @@
   width: 100%;
   z-index: $zindex-20;
 
-  .container {
+  &__container {
     height: inherit;
   }
-  &--inner {
+  &__inner {
     align-items: center;
     display: flex;
     height: 100%;

@@ -5,10 +5,10 @@
   line-height: Rem(28px);
   text-transform: uppercase;
 
-  &_link {
+  &-link {
     color: $color_base-white;
   }
-  &-blue {
+  &--blue {
     color: $color_blue-20;
   }
 }

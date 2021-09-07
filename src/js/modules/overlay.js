@@ -4,9 +4,11 @@ class Overlay {
     // Классы
     this.overlayClass = 'overlay';
     this.overlayActiveClass = this.overlayClass + '--active';
+    this.bodyClass = 'body';
+    this.bodyFixedClass = this.bodyClass + '--fixed';
 
     // Элементы
-    this.bodyEl = document.getElementsByTagName('body')[0];
+    this.bodyEl = document.querySelector('.' + this.bodyClass);
     this.overlayEl = document.querySelector('.' + this.overlayClass);
 
     // События
@@ -23,7 +25,7 @@ class Overlay {
 
   toggle() {
     this.overlayEl.classList.toggle(this.overlayActiveClass);
-    this.bodyEl.classList.toggle('fixed');
+    this.bodyEl.classList.toggle(this.bodyFixedClass);
   }
 
   show() {
