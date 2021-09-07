@@ -13,6 +13,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
   min-width: 320px;
+  position: relative;
+
+  &.fixed {
+    overflow: hidden;
+  }
 }
 
 a {

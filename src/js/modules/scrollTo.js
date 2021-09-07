@@ -17,6 +17,8 @@ class ScrollTo {
         top: y - self.offset,
         behavior: 'smooth'
       });
+
+
     }))
   }
 

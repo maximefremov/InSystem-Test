@@ -3,7 +3,7 @@
 
 .header {
   background-color: rgba($color_midnight-40, 0.9);
-  height: 100px;
+  height: $header_height-xl;
   left: 0;
   position: fixed;
   top: 0;
@@ -24,20 +24,20 @@
 @include Screen-lg {
 
   .header {
-    height: 90px;
+    height: $header_height-lg;
   }
 }
 
 @include Screen-md {
 
   .header {
-    height: 80px;
+    height: $header_height-md;
   }
 }
 
 @include Screen-xs {
 
   .header {
-    height: 70px;
+    height: $header_height-xs;
   }
 }

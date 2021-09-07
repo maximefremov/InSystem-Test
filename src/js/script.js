@@ -10,9 +10,9 @@ class App {
     };
     const HEADER_OFFSET = {
       'XS': 70,
-      'SM': 80,
-      'MD': 90,
-      'LG': 100
+      'MD': 80,
+      'LG': 90,
+      'XL': 100
     };
 
     let windowWidth = 0;
@@ -25,23 +25,17 @@ class App {
     window.onresize = function() {
       windowWidth = this.innerWidth;
 
-      if (windowWidth <= BREAKPOINTS.XS) {
-        scrollTo.setOffset = HEADER_OFFSET.XS;
-      }
-      if (windowWidth <= BREAKPOINTS.SM) {
+      if (windowWidth < BREAKPOINTS.XS) scrollTo.setOffset = HEADER_OFFSET.XS;
+      else if (windowWidth < BREAKPOINTS.MD) scrollTo.setOffset = HEADER_OFFSET.MD;
+      else if (windowWidth < BREAKPOINTS.LG) scrollTo.setOffset = HEADER_OFFSET.LG;
+      else scrollTo.setOffset = HEADER_OFFSET.XL;
+
+      if (windowWidth < BREAKPOINTS.SM) {
         isSM = false;
       }
       if (windowWidth >= BREAKPOINTS.SM) {
-        scrollTo.setOffset = HEADER_OFFSET.SM;
-
         if (!isSM) headerMenu.hide();
         isSM = true;
-      }
-      if (windowWidth >= BREAKPOINTS.MD) {
-        scrollTo.setOffset = HEADER_OFFSET.MD;
-      }
-      if (windowWidth >= BREAKPOINTS.LG) {
-        scrollTo.setOffset = HEADER_OFFSET.LG;
       }
     }
     window.dispatchEvent(new Event('resize'));

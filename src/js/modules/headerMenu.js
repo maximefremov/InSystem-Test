@@ -13,17 +13,25 @@ class HeaderMenu {
 
     // События
     this.menuToggleEl.addEventListener('click', ()=> {
-      this._toggle(this.menuActiveClass, this.menuToggleActiveClass);
+      this.toggle(this.menuActiveClass, this.menuToggleActiveClass);
     });
+
+    // Overlay init
+    this.overlay = new Overlay([this.menuActiveClass, this.menuToggleActiveClass]);
   }
 
-  _toggle() {
+  toggle() {
     this.menuEl.classList.toggle(this.menuActiveClass);
     this.menuToggleEl.classList.toggle(this.menuToggleActiveClass);
+    this.overlay.toggle();
+  }
+
+  show() {
+    if (!this.menuEl.classList.contains(this.menuActiveClass)) this.toggle();
   }
 
   hide() {
-    if (this.menuEl.classList.contains(this.menuActiveClass)) this._toggle()
+    if (this.menuEl.classList.contains(this.menuActiveClass)) this.toggle();
   }
 
 }

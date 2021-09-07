@@ -48,6 +48,10 @@ body {
   -moz-osx-font-smoothing: grayscale;
   margin: 0;
   min-width: 320px;
+  position: relative;
+}
+body.fixed {
+  overflow: hidden;
 }
 
 a {
@@ -100,6 +104,23 @@ button {
     max-width: none;
   }
 }
+.overlay {
+  transition: all 360ms ease-in-out 0ms;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  background-color: rgba(35, 31, 32, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  z-index: 10;
+}
+.overlay--active {
+  opacity: 1;
+  visibility: visible;
+}
+
 .button {
   transition: all 260ms ease-in-out 0ms;
   background-color: #ffffff;
@@ -213,14 +234,6 @@ button {
 @media only screen and (max-width: 991px) {
   .header__logo {
     font-size: 1.5rem;
-  }
-}
-@media only screen and (max-width: 768px) {
-  .header__logo {
-    align-items: center;
-    display: flex;
-    height: 100%;
-    justify-content: space-between;
   }
 }
 @media only screen and (max-width: 575px) {

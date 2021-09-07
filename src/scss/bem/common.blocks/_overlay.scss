@@ -1,0 +1,13 @@
+.overlay {
+  @include Transition(3);
+  @include Pos-abs;
+  background-color: rgba($color_grey-40, 0.5);
+  opacity: 0;
+  visibility: hidden;
+  z-index: $zindex-10;
+
+  &--active {
+    opacity: 1;
+    visibility: visible;
+  }
+}
