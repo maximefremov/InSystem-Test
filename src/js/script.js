@@ -20,7 +20,6 @@ class App {
     const headerMenu = new HeaderMenu();
     const scrollTo = new ScrollTo();
 
-    // Resize event
     window.onresize = function() {
       windowWidth = this.innerWidth;
 
@@ -38,6 +37,12 @@ class App {
       }
     }
     window.dispatchEvent(new Event('resize'));
+
+    this._heroAnimate();
+  }
+
+  _heroAnimate() {
+    document.querySelector('.hero').classList.add('hero--animated');
   }
 
 }

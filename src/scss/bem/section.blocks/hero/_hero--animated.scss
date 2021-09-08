@@ -1,0 +1,35 @@
+.hero__title, .hero__content, .hero__buttons {
+  opacity: 0;
+}
+
+.hero--animated {
+
+  .hero__title, .hero__content, .hero__buttons {
+    animation-fill-mode: forwards;
+    animation-name: slide-down;
+    animation-timing-function: ease-in-out;
+  }
+  .hero__title {
+    animation-duration: 500ms;
+  }
+  .hero__content {
+    animation-delay: 200ms;
+    animation-duration: 600ms;
+  }
+  .hero__buttons {
+    animation-delay: 400ms;
+    animation-duration: 700ms;
+  }
+}
+
+@keyframes slide-down {
+
+  0% {
+    opacity: 0;
+    transform: translate3d(25%, 0, 0);
+  }
+  100% {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
