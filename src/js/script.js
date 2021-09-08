@@ -47,6 +47,6 @@ class App {
 
 }
 
-window.addEventListener('DOMContentLoaded', function() {
+window.addEventListener('load', function() {
   new App();
 });
