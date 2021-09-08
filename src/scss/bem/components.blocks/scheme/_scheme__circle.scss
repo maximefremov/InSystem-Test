@@ -1,0 +1,16 @@
+@include Screen-lg {
+
+  .scheme__circle {
+    max-height: 90px;
+    max-width: 90px;
+  }
+}
+
+@include Screen-md {
+
+  .scheme__circle {
+    border-width: 3px;
+    max-height: 60px;
+    max-width: 60px;
+  }
+}

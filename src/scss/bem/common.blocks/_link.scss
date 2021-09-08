@@ -1,0 +1,7 @@
+.link {
+  @include Transition(2, color);
+
+  &:hover {
+    color: $color_blue-10;
+  }
+}

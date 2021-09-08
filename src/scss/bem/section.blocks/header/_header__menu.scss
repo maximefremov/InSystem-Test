@@ -5,12 +5,7 @@
   text-transform: uppercase;
 
   &-item {
-    @include Transition(2, color);
     color: $color_base-white;
-
-    &:hover {
-      color: $color_blue-10;
-    }
   }
   &-item + &-item {
     margin-left: 60px;

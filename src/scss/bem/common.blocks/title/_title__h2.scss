@@ -1,5 +1,27 @@
 .title__h2 {
   font-size: Rem(36px);
   font-weight: 800;
+  letter-spacing: 1px;
   text-transform: uppercase;
+}
+
+@include Screen-lg {
+
+  .title__h2 {
+    font-size: Rem(34px);
+  }
+}
+
+@include Screen-md {
+
+  .title__h2 {
+    font-size: Rem(32px);
+  }
+}
+
+@include Screen-xs {
+
+  .title__h2 {
+    font-size: Rem(30px);
+  }
 }

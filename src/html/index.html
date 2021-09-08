@@ -25,10 +25,10 @@
           <span class="header__menu-toggle-line"></span>
         </button>
         <nav class="header__menu">
-          <a class="header__menu-item" href="#">Бизнес</a>
-          <a class="header__menu-item" href="#">О нас</a>
-          <a class="header__menu-item" href="#">Цены</a>
-          <a class="header__menu-item" href="#checkout">Оформить заказ</a>
+          <a class="link header__menu-item" href="#">Бизнес</a>
+          <a class="link header__menu-item" href="#">О нас</a>
+          <a class="link header__menu-item" href="#">Цены</a>
+          <a class="link header__menu-item" href="#checkout">Оформить заказ</a>
         </nav>
       </div>
     </div>
@@ -41,7 +41,7 @@
         <source srcset="assets/images/hero-bg.webp" type="image/webp">
         <img class="section__bg-img" src="assets/images/hero-bg.jpg" alt="Hero background">
       </picture>
-      <div class="container">
+      <div class="container hero__container">
         <div class="hero__inner">
           <h1 class="title__h1 hero__title">
             <span class="title--blue">Lorem ipsum </span>dolor sit amet consectetur
@@ -69,95 +69,99 @@
         <source srcset="assets/images/checkout-bg.webp" type="image/webp">
         <img class="section__bg-img" src="assets/images/checkout-bg.jpg" alt="Checkout background">
       </picture>
-      <div class="container">
+      <div class="container checkout__container">
         <div class="checkout__inner">
           <h2 class="title__h2 section__title">Оформление <span class="title--blue">заказа</span></h2>
           <p class="section__desc">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
-
-          <div class="features">
-
-            <figure class="features__item">
-              <div class="features__item-inner">
-                <div class="icon-circle features__circle">
-                  <img class="icon-circle__img features__img" src="assets/icons/checkout/loupe.svg">
+          <div class="scheme">
+            <figure class="scheme__item">
+              <div class="scheme__item-inner">
+                <div class="icon-circle scheme__circle">
+                  <img class="icon-circle__img scheme__img" src="assets/icons/checkout/loupe.svg" alt="">
                 </div>
-                <div class="features__ellipses">
-                  <span class="features__ellipses-item"></span>
-                  <span class="features__ellipses-item"></span>
-                  <span class="features__ellipses-item"></span>
-                  <span class="features__ellipses-item"></span>
-                  <span class="features__ellipses-item"></span>
+                <div class="scheme__ellipses">
+                  <span class="scheme__ellipses-item"></span>
+                  <span class="scheme__ellipses-item"></span>
                 </div>
               </div>
-              <figcaption class="features__desc">Lorem ipsum dolor sit amet</figcaption>
+              <figcaption class="scheme__caption">Lorem ipsum dolorsit amet</figcaption>
             </figure>
-
-            <figure class="features__item">
-              <div class="features__item-inner">
-                <div class="icon-circle features__circle">
-                  <img class="icon-circle__img features__img" src="assets/icons/checkout/percent.svg">
+            <figure class="scheme__item">
+              <div class="scheme__item-inner">
+                <div class="icon-circle scheme__circle">
+                  <img class="icon-circle__img scheme__img" src="assets/icons/checkout/percent.svg" alt="">
                 </div>
-                <div class="features__ellipses">
-                  <span class="features__ellipses-item"></span>
-                  <span class="features__ellipses-item"></span>
-                  <span class="features__ellipses-item"></span>
-                  <span class="features__ellipses-item"></span>
-                  <span class="features__ellipses-item"></span>
+                <div class="scheme__ellipses">
+                  <span class="scheme__ellipses-item"></span>
+                  <span class="scheme__ellipses-item"></span>
                 </div>
               </div>
-              <figcaption class="features__desc">Сonsecteturadipiscing elit</figcaption>
+              <figcaption class="scheme__caption">Сonsecteturadipiscing elit</figcaption>
             </figure>
-
-            <figure class="features__item">
-              <div class="features__item-inner">
-                <div class="icon-circle features__circle">
-                  <img class="icon-circle__img features__img" src="assets/icons/checkout/document-add.svg">
+            <figure class="scheme__item">
+              <div class="scheme__item-inner">
+                <div class="icon-circle scheme__circle">
+                  <img class="icon-circle__img scheme__img" src="assets/icons/checkout/document-add.svg" alt="">
                 </div>
-                <div class="features__ellipses">
-                  <span class="features__ellipses-item"></span>
-                  <span class="features__ellipses-item"></span>
-                  <span class="features__ellipses-item"></span>
-                  <span class="features__ellipses-item"></span>
-                  <span class="features__ellipses-item"></span>
+                <div class="scheme__ellipses">
+                  <span class="scheme__ellipses-item"></span>
+                  <span class="scheme__ellipses-item"></span>
                 </div>
               </div>
-              <figcaption class="features__desc">Sed do eiusmod tempor</figcaption>
+              <figcaption class="scheme__caption">Sed do eiusmod tempor</figcaption>
             </figure>
-
-            <figure class="features__item">
-              <div class="features__item-inner">
-                <div class="icon-circle features__circle">
-                  <img class="icon-circle__img features__img" src="assets/icons/checkout/mail.svg">
+            <figure class="scheme__item">
+              <div class="scheme__item-inner">
+                <div class="icon-circle scheme__circle">
+                  <img class="icon-circle__img scheme__img" src="assets/icons/checkout/mail.svg" alt="">
                 </div>
-                <div class="features__ellipses">
-                  <span class="features__ellipses-item"></span>
-                  <span class="features__ellipses-item"></span>
-                  <span class="features__ellipses-item"></span>
-                  <span class="features__ellipses-item"></span>
-                  <span class="features__ellipses-item"></span>
+                <div class="scheme__ellipses">
+                  <span class="scheme__ellipses-item"></span>
+                  <span class="scheme__ellipses-item"></span>
                 </div>
               </div>
-              <figcaption class="features__desc">Esse cillum dolore eu fugiat</figcaption>
+              <figcaption class="scheme__caption">Esse cillum doloreeu fugiat</figcaption>
             </figure>
-
-            <figure class="features__item">
-              <div class="features__item-inner">
-                <div class="icon-circle features__circle">
-                  <img class="icon-circle__img features__img" src="assets/icons/checkout/money.svg">
+            <figure class="scheme__item">
+              <div class="scheme__item-inner">
+                <div class="icon-circle scheme__circle">
+                  <img class="icon-circle__img scheme__img" src="assets/icons/checkout/money.svg" alt="">
                 </div>
               </div>
-              <figcaption class="features__desc">Excepteur sint occaecat cupidatat non proident</figcaption>
+              <figcaption class="scheme__caption">Excepteur sint occaecat cupidatat non proident</figcaption>
             </figure>
-
           </div>
-
         </div>
       </div>
     </section>
   </main>
   <footer class="footer">
-    <div class="container">
-      Footer
+    <div class="container footer__container">
+      <div class="footer__inner">
+        <p class="footer__copyright">© 2018 «LoremIpsum.net» Все права защищены.</p>
+        <div class="footer__item footer__divider"></div>
+        <div class="footer__item">
+          <img class="footer__icon" src="assets/icons/footer/qiwi.svg" alt="Qiwi">
+          <span class="footer__icon-name">QIWI wallet</span>
+        </div>
+        <div class="footer__item">
+          <img class="footer__icon" src="assets/icons/footer/yandex-money.svg" alt="Yandex.money">
+          <span class="footer__icon-name">Yandex Money</span>
+        </div>
+        <div class="footer__item">
+          <img class="footer__icon" src="assets/icons/footer/web-money.svg" alt="Webmoney">
+          <span class="footer__icon-name">Web Money</span>
+        </div>
+        <div class="footer__item footer__divider"></div>
+        <div class="footer__item">
+          <img class="footer__icon" src="assets/icons/footer/mail.svg" alt="Email">
+          <a class="link footer__icon-link" href="mailto:info@ipsum228.com">info@ipsum228.com</a>
+        </div>
+        <div class="footer__item">
+          <img class="footer__icon" src="assets/icons/footer/vk.svg" alt="Vk">
+          <a class="link footer__icon-link" href="https://vk.com" target="_blank">Мы вконтакте</a>
+        </div>
+      </div>
     </div>
   </footer>
   <div class="overlay"></div>

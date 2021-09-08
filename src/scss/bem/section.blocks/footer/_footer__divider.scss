@@ -1,0 +1,19 @@
+.footer__divider {
+  background-color: $color_grey-10;
+  height: 18px;
+  width: 1px;
+}
+
+@include Screen-md {
+
+  .footer__divider:first-of-type {
+    display: none;
+  }
+}
+
+@include Screen-xs {
+
+  .footer__divider {
+    display: none;
+  }
+}

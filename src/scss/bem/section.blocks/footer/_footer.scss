@@ -1,3 +1,24 @@
+@import "footer__item";
+@import "footer__divider";
+@import "footer__copyright";
+@import "footer__icon";
+
 .footer {
   background-color: $color_midnight-10;
+  font-size: Rem(13px);
+  padding: 25px 0;
+
+  &__inner {
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+}
+
+@include Screen-md {
+
+  .footer__inner {
+    justify-content: flex-start;
+  }
 }

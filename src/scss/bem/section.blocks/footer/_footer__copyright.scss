@@ -1,0 +1,12 @@
+.footer__copyright {
+  margin-right: 10px;
+}
+
+@include Screen-md {
+
+  .footer__copyright {
+    margin-bottom: 5px;
+    margin-right: 0;
+    width: 100%;
+  }
+}

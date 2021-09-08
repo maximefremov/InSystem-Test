@@ -1,7 +1,7 @@
 .checkout {
   background-color: $color_midnight-20;
 
-  &__inner {
+  &__container {
     position: relative;
     z-index: $zindex-10;
   }

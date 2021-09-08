@@ -1,0 +1,17 @@
+@import "scheme__item";
+@import "scheme__circle";
+@import "scheme__img";
+@import "scheme__ellipses";
+@import "scheme__caption";
+
+.scheme {
+  display: flex;
+  justify-content: space-between;
+}
+
+@include Screen-md {
+
+  .scheme {
+    flex-wrap: wrap;
+  }
+}

@@ -7,10 +7,12 @@
   padding: 200px 0;
   position: relative;
 
-  &__inner {
-    max-width: 60%;
+  &__container {
     position: relative;
     z-index: $zindex-10;
+  }
+  &__inner {
+    max-width: 60%;
   }
 }
 

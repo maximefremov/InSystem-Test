@@ -1,0 +1,21 @@
+.scheme__caption {
+  font-size: Rem(16px);
+  margin-top: 20px;
+  text-align: center;
+}
+
+@include Screen-md {
+
+  .scheme__caption {
+    margin-left: 20px;
+    margin-top: 0;
+    text-align: left;
+  }
+}
+
+@include Screen-sm {
+
+  .scheme__caption {
+    margin-left: 15px;
+  }
+}

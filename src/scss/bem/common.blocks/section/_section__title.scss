@@ -3,3 +3,17 @@
   margin-bottom: 30px;
   text-align: center;
 }
+
+@include Screen-md {
+
+  .section__title {
+    margin-bottom: 25px;
+  }
+}
+
+@include Screen-xs {
+
+  .section__title {
+    margin-bottom: 20px;
+  }
+}
