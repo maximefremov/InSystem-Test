@@ -1,0 +1,62 @@
+.checkout__form {
+  width: 100%;
+
+  &-row {
+    gap: 30px;
+  }
+  &-row + &-row {
+    margin-top: 30px;
+  }
+  &-item {
+    flex: 1;
+    min-width: 280px;
+  }
+  &-outer {
+    display: flex;
+    justify-content: center;
+  }
+  &-file, &-submit {
+    margin: 0 auto;
+    max-width: 370px;
+  }
+  &-submit {
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+@include Screen-lg {
+
+  .checkout__form {
+
+    &-row {
+      gap: 20px;
+    }
+    &-row + &-row {
+      margin-top: 20px;
+    }
+  }
+}
+
+@include Screen-sm {
+
+  .checkout__form {
+
+    &-range {
+      flex-basis: 100%;
+    }
+    &-file {
+      padding-top: 10px;
+    }
+  }
+}
+
+@include Screen-xs {
+
+  .checkout__form {
+
+    &-file, &-submit {
+      margin: 0;
+    }
+  }
+}

@@ -1,8 +1,3 @@
-@import "hero__title";
-@import "hero__content";
-@import "hero__buttons";
-@import "hero--animated";
-
 .hero {
   background: $color_base-black;
   padding: 200px 0;
@@ -55,3 +50,8 @@
     }
   }
 }
+
+@import "hero__title";
+@import "hero__content";
+@import "hero__buttons";
+@import "hero--animated";

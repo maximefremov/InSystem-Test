@@ -4,7 +4,6 @@
   flex: 1;
   flex-direction: column;
   max-width: 210px;
-  padding: 0 10px;
 
   &-inner {
     position: relative;
@@ -18,7 +17,12 @@
     flex-direction: row;
     margin-bottom: 15px;
     max-width: none;
-    padding: 0 15px 0 0;
+  }
+  .scheme__item:nth-child(2n - 1) {
+    padding-right: 10px;
+  }
+  .scheme__item:nth-child(2n) {
+    padding-left: 10px;
   }
 }
 
@@ -26,8 +30,10 @@
 
   .scheme__item {
     flex-basis: 100%;
-    padding: 0;
 
+    &:nth-child(2n - 1), &:nth-child(2n) {
+      padding: 0;
+    }
     &:last-child {
       margin-bottom: 0;
     }

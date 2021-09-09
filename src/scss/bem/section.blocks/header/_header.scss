@@ -1,6 +1,3 @@
-@import "header__logo";
-@import "header__menu";
-
 .header {
   background-color: rgba($color_midnight-40, 0.9);
   height: $header_height-xl;
@@ -41,3 +38,6 @@
     height: $header_height-xs;
   }
 }
+
+@import "header__logo";
+@import "header__menu";

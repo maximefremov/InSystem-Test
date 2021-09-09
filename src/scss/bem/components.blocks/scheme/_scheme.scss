@@ -1,11 +1,6 @@
-@import "scheme__item";
-@import "scheme__circle";
-@import "scheme__img";
-@import "scheme__ellipses";
-@import "scheme__caption";
-
 .scheme {
   display: flex;
+  gap: 20px;
   justify-content: space-between;
 }
 
@@ -13,5 +8,12 @@
 
   .scheme {
     flex-wrap: wrap;
+    gap: 0;
   }
 }
+
+@import "scheme__item";
+@import "scheme__circle";
+@import "scheme__img";
+@import "scheme__ellipses";
+@import "scheme__caption";

@@ -12,7 +12,7 @@ class Overlay {
     this.overlayEl = document.querySelector('.' + this.overlayClass);
 
     // События
-    this.overlayEl.addEventListener('click', ()=> {
+    this.overlayEl.addEventListener('click', () => {
       this.hide();
 
       if (hideElementsClasses.length) {

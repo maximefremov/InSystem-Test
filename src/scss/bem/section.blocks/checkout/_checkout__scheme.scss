@@ -1,0 +1,17 @@
+.checkout__scheme {
+  margin: 75px 0;
+}
+
+@include Screen-md {
+
+  .checkout__scheme {
+    margin: 60px 0;
+  }
+}
+
+@include Screen-xs {
+
+  .checkout__scheme {
+    margin: 45px 0;
+  }
+}

@@ -6,7 +6,7 @@ class ScrollTo {
 
     const linksEl = document.querySelectorAll('a[href^="#"]');
 
-    [...linksEl].forEach(el => el.addEventListener('click',function (e) {
+    linksEl.forEach((el) => el.addEventListener('click',function (e) {
       e.preventDefault();
 
       let y = 0;

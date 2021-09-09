@@ -3,6 +3,7 @@
 }
 
 .hero--animated {
+  overflow: hidden;
 
   .hero__title, .hero__content, .hero__buttons {
     animation-fill-mode: forwards;

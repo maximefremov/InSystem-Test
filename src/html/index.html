@@ -39,15 +39,15 @@
         <source srcset="assets/images/hero-bg-sm.webp" media="(max-width: 768px)" type="image/webp">
         <source srcset="assets/images/hero-bg-sm.png" media="(max-width: 768px)">
         <source srcset="assets/images/hero-bg.webp" type="image/webp">
-        <img class="section__bg-img" src="assets/images/hero-bg.jpg" alt="Hero background">
+        <img class="section__bg-img" src="assets/images/hero-bg.jpg" alt="Hero background" loading="lazy">
       </picture>
       <div class="container hero__container">
         <div class="hero__inner">
-          <h1 class="title__h1 hero__title animated">
+          <h1 class="title__h1 hero__title">
             <span class="title--blue">Lorem ipsum </span>dolor sit amet consectetur
             <span class="title--blue">adipiscing</span>
           </h1>
-          <div class="hero__content content animated">
+          <div class="hero__content content">
             <p class="content__para">
               <strong>At vero eos et accusamus et iusto odio dignissimos ducimus!</strong>
             </p>
@@ -57,7 +57,7 @@
               <li class="content__list-item">Sed ut perspiciatis, unde omnis iste natus error</li>
             </ul>
           </div>
-          <div class="hero__buttons animated">
+          <div class="hero__buttons">
             <button class="button button--blue hero__buttons-item">Заказать</button>
             <a class="button hero__buttons-item" href="#">Подробнее</a>
           </div>
@@ -67,13 +67,13 @@
     <section id="checkout" class="section checkout">
       <picture class="section__bg">
         <source srcset="assets/images/checkout-bg.webp" type="image/webp">
-        <img class="section__bg-img" src="assets/images/checkout-bg.jpg" alt="Checkout background">
+        <img class="section__bg-img" src="assets/images/checkout-bg.jpg" alt="Checkout background" loading="lazy">
       </picture>
       <div class="container checkout__container">
         <div class="checkout__inner">
           <h2 class="title__h2 section__title">Оформление <span class="title--blue">заказа</span></h2>
           <p class="section__desc">Перед заполнением формы ознакомьтесь с нашей схемой работы!</p>
-          <div class="scheme">
+          <div class="scheme checkout__scheme">
             <figure class="scheme__item">
               <div class="scheme__item-inner">
                 <div class="icon-circle scheme__circle">
@@ -130,6 +130,35 @@
               </div>
               <figcaption class="scheme__caption">Excepteur sint occaecat cupidatat non proident</figcaption>
             </figure>
+          </div>
+          <div class="checkout__form-outer">
+            <form class="form checkout__form" action="/" method="POST">
+
+              <div class="form__row checkout__form-row">
+                <input class="form__input checkout__form-item" id="checkout__form-type" name="checkout__form-type" type="text" placeholder="Выберите тип системы">
+                <input class="form__input checkout__form-item" id="checkout__form-email" name="checkout__form-email" type="email" placeholder="Ваш e-mail">
+                <input class="form__input checkout__form-item" id="checkout__form-name" name="checkout__form-name" type="text" placeholder="Ваше имя">
+              </div>
+
+              <div class="form__row checkout__form-row">
+                <div class="form__range-outer checkout__form-item checkout__form-range">
+                  <label class="form__range-label" for="checkout__form-range">
+                    Sed ut perspiciatis, unde omnis iste natus<span class="form__range-percent"></span>
+                  </label>
+                  <input class="form__range" id="checkout__form-range" name="checkout__form-range" type="range" min="0" max="100" value="75">
+                </div>
+                <div class="form__file-outer checkout__form-item checkout__form-file">
+                  <input class="form__file" id="checkout__form-file" name="checkout__form-file" type="file">
+                  <button class="button button--big form__file-button"><i class="form__file-icon"></i>Прикрепить файл</button>
+                </div>
+              </div>
+
+              <div class="form__row checkout__form-row">
+                <input class="button button--blue button--big checkout__form-submit"
+                       id="checkout__form-submit" name="checkout__form-submit" type="submit" value="Отправить">
+              </div>
+
+            </form>
           </div>
         </div>
       </div>

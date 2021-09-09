@@ -1,0 +1,88 @@
+@mixin form__range-track {
+  @include Transition(2);
+  background-color: rgba($color_base-white, 0.7);
+  border: 1px solid $color_base-white;
+  border-radius: 5px;
+  height: 6px;
+}
+
+@mixin form__range-track--focus {
+  background-color: $color_base-white;
+  border-color: $color_blue-30;
+}
+
+@mixin form__range-thumb {
+  @include Transition(2, background-color);
+  background-color: $color_blue-20;
+  border: 3px solid $color_blue-40;
+  border-radius: 50%;
+}
+
+@mixin form__range-thumb--focus {
+  background-color: rgba($color_blue-20, 0.85);
+}
+
+.form__range {
+  appearance: none;
+  cursor: pointer;
+  max-height: 6px;
+  width: 100%;
+
+  &::-webkit-slider-runnable-track {
+    @include form__range-track;
+    appearance: none;
+  }
+  &:focus::-webkit-slider-runnable-track {
+    @include form__range-track--focus;
+  }
+  &::-webkit-slider-thumb {
+    @include form__range-thumb;
+    appearance: none;
+    height: 26px;
+    margin-top: -11px;
+    width: 26px;
+  }
+  &:focus::-webkit-slider-thumb {
+    background-color: rgba($color_blue-20, 0.85);
+  }
+  &::-moz-range-track {
+    @include form__range-track;
+  }
+  &:focus::-moz-range-track {
+    @include form__range-track--focus;
+  }
+  &::-moz-range-thumb {
+    @include form__range-thumb;
+    height: 20px;
+    width: 20px;
+  }
+  &:focus::-moz-range-thumb {
+    @include form__range-thumb--focus;
+  }
+  &-outer {
+    display: flex;
+    flex-direction: column;
+  }
+  &-label {
+    align-items: flex-end;
+    display: flex;
+    font-size: Rem(18px);
+    margin-bottom: 15px;
+  }
+  &-percent {
+    color: rgba($color_base-white, 0.85);
+    font-weight: 600;
+    margin-left: auto;
+    padding-left: 15px;
+  }
+}
+
+@include Screen-md {
+
+  .form__range {
+
+    &-label {
+      font-size: Rem(16px);
+    }
+  }
+}
