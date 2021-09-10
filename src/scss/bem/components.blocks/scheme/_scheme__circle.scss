@@ -1,8 +1,13 @@
+.scheme__circle {
+  max-height: $size_circle-xl;
+  max-width: $size_circle-xl;
+}
+
 @include Screen-lg {
 
   .scheme__circle {
-    max-height: 90px;
-    max-width: 90px;
+    max-height: $size_circle-lg;
+    max-width: $size_circle-lg;
   }
 }
 
@@ -10,7 +15,7 @@
 
   .scheme__circle {
     border-width: 3px;
-    max-height: 60px;
-    max-width: 60px;
+    max-height: $size_circle-md;
+    max-width: $size_circle-md;
   }
 }

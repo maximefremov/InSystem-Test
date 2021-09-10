@@ -1,7 +1,12 @@
+$size_circle-xl: 100px;
+$size_circle-lg: 90px;
+$size_circle-md: 60px;
+
 .scheme {
   display: flex;
   gap: 20px;
   justify-content: space-between;
+  position: relative;
 }
 
 @include Screen-md {
@@ -17,3 +22,4 @@
 @import "scheme__img";
 @import "scheme__ellipses";
 @import "scheme__caption";
+@import "scheme__spacer";

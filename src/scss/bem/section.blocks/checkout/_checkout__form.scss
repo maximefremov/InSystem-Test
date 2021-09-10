@@ -35,6 +35,19 @@
     &-row + &-row {
       margin-top: 20px;
     }
+    &-file {
+      max-width: 300px;
+    }
+  }
+}
+
+@include Screen-md {
+
+  .checkout__form {
+
+    &-file {
+      max-width: 370px;
+    }
   }
 }
 
