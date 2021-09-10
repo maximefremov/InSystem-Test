@@ -12,6 +12,10 @@ module.exports = function (gulp, plugins, bs, settings) {
     })).pipe(plugins.debug({title: 'babel: '}))
     // Конкатенация всех JS файлов в один
     .pipe(plugins.concat('script.min.js'))
+    // Минимизируем файлы
+    .pipe(plugins.if(!settings.isDev, plugins.uglify({compress: {
+      drop_console: true
+    }}))).pipe(plugins.if(!settings.isDev, plugins.debug({title: 'uglify: '})))
     // Пишем на диск Sourcemap (для Dev режима)
     .pipe(plugins.if(settings.isDev, plugins.sourcemaps.write('.'))).pipe(plugins.if(settings.isDev, plugins.debug({title: 'sourcemaps: '})))
     // Пишем файлы в Prod директорию
