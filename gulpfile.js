@@ -33,7 +33,7 @@ class Settings {
     };
 
     this.cssVendors = [];
-    this.jsVendors = [];
+    this.jsVendors = ['node_modules/custom-select/build/custom-select.min.js'];
   }
 
 }

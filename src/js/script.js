@@ -41,6 +41,7 @@ class App {
     this._heroAnimate();
     this._formFile();
     this._formRange();
+    this._formSelect();
   }
 
   _heroAnimate() {
@@ -78,6 +79,10 @@ class App {
       });
       onInput(el);
     });
+  }
+
+  _formSelect() {
+    customSelect('select');
   }
 
 }

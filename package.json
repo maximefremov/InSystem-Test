@@ -49,5 +49,8 @@
     "stylelint": "^13.13.1",
     "stylelint-config-sass-guidelines": "^8.0.0",
     "stylelint-scss": "^3.20.1"
+  },
+  "dependencies": {
+    "custom-select": "^1.1.15"
   }
 }

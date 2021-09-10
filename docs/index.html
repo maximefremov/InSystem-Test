@@ -7,6 +7,7 @@
   <meta name="robots" content="noindex, nofollow">
   <title>InSystem Test</title>
   <meta name="description" content="InSystem Test Page">
+  <script src="custom-select.min.js"></script>
   <script src="script.min.js"></script>
   <link href="style.min.css" rel="stylesheet">
 </head>
@@ -136,7 +137,24 @@
             <form class="form checkout__form" action="/" method="POST">
 
               <div class="form__row checkout__form-row">
-                <input class="form__input checkout__form-item" id="checkout__form-type" name="checkout__form-type" type="text" placeholder="Выберите тип системы">
+
+                <div class="form__select-outer checkout__form-item">
+                  <select class="form__select" id="checkout__form-type"
+                          name="checkout__form-type" autocomplete="off" placeholder="Выберите тип системы">
+
+                    <option value="Sed ut perspiciatis">Sed ut perspiciatis</option>
+                    <option value="Nemo enim ipsam">Nemo enim ipsam</option>
+                    <option value="Et harum quidem">Et harum quidem</option>
+                    <option value="Temporibus autem">Temporibus autem</option>
+                    <option value="Itaque earum rerum">Itaque earum rerum</option>
+                    <option value="Sed ut perspiciatis 2">Sed ut perspiciatis 2</option>
+                    <option value="Nemo enim ipsam 2">Nemo enim ipsam 2</option>
+                    <option value="Et harum quidem 2">Et harum quidem 2</option>
+                    <option value="Temporibus autem 2">Temporibus autem 2</option>
+                    <option value="Itaque earum rerum 2">Itaque earum rerum 2</option>
+                  </select>
+                </div>
+
                 <input class="form__input checkout__form-item" id="checkout__form-email" name="checkout__form-email" type="email" placeholder="Ваш e-mail">
                 <input class="form__input checkout__form-item" id="checkout__form-name" name="checkout__form-name" type="text" placeholder="Ваше имя">
               </div>
