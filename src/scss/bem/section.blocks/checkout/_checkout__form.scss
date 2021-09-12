@@ -1,53 +1,18 @@
 .checkout__form {
-  width: 100%;
 
-  &-row {
-    gap: 30px;
-  }
-  &-row + &-row {
-    margin-top: 30px;
-  }
-  &-item {
-    flex: 1;
-    min-width: 280px;
-  }
   &-outer {
     display: flex;
     justify-content: center;
   }
-  &-file, &-submit {
+  &-file-outer, &-submit-outer {
     margin: 0 auto;
-    max-width: 370px;
   }
-  &-submit {
+  &-range-outer {
+    flex: 1;
+  }
+  &-submit-outer {
+    flex: 0 0 auto;
     margin-top: 10px;
-    width: 100%;
-  }
-}
-
-@include Screen-lg {
-
-  .checkout__form {
-
-    &-row {
-      gap: 20px;
-    }
-    &-row + &-row {
-      margin-top: 20px;
-    }
-    &-file {
-      max-width: 300px;
-    }
-  }
-}
-
-@include Screen-md {
-
-  .checkout__form {
-
-    &-file {
-      max-width: 370px;
-    }
   }
 }
 
@@ -55,11 +20,15 @@
 
   .checkout__form {
 
-    &-range {
+    &-range-outer {
       flex-basis: 100%;
+      margin-bottom: 10px;
     }
-    &-file {
-      padding-top: 10px;
+    &-file-outer {
+      flex: 0 0 auto;
+    }
+    &-submit-outer {
+      margin-top: 0;
     }
   }
 }
@@ -68,8 +37,8 @@
 
   .checkout__form {
 
-    &-file, &-submit {
-      margin: 0;
+    &-file-outer, &-submit-outer {
+      flex: 1;
     }
   }
 }

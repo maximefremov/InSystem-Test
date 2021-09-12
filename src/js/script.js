@@ -82,7 +82,16 @@ class App {
   }
 
   _formSelect() {
-    customSelect('select');
+    customSelect('.form__select', {
+      containerClass: 'form__select-container',
+      openerClass: 'form__select-opener',
+      panelWrapperClass: 'form__select-panel-wrapper',
+      panelClass: 'form__select-panel',
+      optionClass: 'form__select-item',
+      isSelectedClass: 'form__select-item--selected',
+      hasFocusClass: 'form__select-item--focus',
+      isOpenClass: 'form__select--open'
+    });
   }
 
 }

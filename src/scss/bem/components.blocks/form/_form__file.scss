@@ -8,14 +8,13 @@
     padding: 12px 15px;
     text-overflow: ellipsis;
     white-space: nowrap;
-    width: 100%;
 
     &:focus {
       border-color: $color_blue-30;
     }
   }
   &-icon {
-    background: url("assets/icons/file.svg") no-repeat;
+    background: url("../assets/icons/file.svg") no-repeat;
     content: "";
     display: inline-block;
     height: 21px;

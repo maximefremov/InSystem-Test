@@ -1,0 +1,18 @@
+.form__item {
+  min-width: 280px;
+  width: calc((100% / 3) - (#{$form_margin-xl * 2} / 3));
+}
+
+@include Screen-lg {
+
+  .form__item {
+    width: calc((100% / 3) - (#{$form_margin-lg * 2}  / 3));
+  }
+}
+
+@include Screen-md {
+
+  .form__item {
+    flex: 1;
+  }
+}

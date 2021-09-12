@@ -1,4 +1,12 @@
+$form_margin-xl: 30px;
+$form_margin-lg: 20px;
+
+.form {
+  width: 100%;
+}
+
 @import "form__row";
+@import "form__item";
 @import "form__input";
 @import "form__file";
 @import "form__range";

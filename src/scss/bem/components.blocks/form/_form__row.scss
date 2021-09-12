@@ -1,6 +1,21 @@
 .form__row {
-  align-items: center;
   display: flex;
   flex-wrap: wrap;
+  gap: $form_margin-xl;
   justify-content: space-between;
+
+  & + & {
+    margin-top: $form_margin-xl;
+  }
+}
+
+@include Screen-lg {
+
+  .form__row {
+    gap: $form_margin-lg;
+
+    & + & {
+      margin-top: $form_margin-lg;
+    }
+  }
 }

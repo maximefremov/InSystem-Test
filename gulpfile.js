@@ -27,13 +27,13 @@ class Settings {
     this.production_Path = './docs/';
     this.production = {
       html_Path:          this.production_Path + '',
-      css_Path:           this.production_Path + '',
-      js_Path:            this.production_Path + '',
+      css_Path:           this.production_Path + 'css/',
+      js_Path:            this.production_Path + 'js/',
       assets_Path:        this.production_Path + 'assets/'
     };
 
     this.cssVendors = [];
-    this.jsVendors = ['node_modules/custom-select/build/custom-select.min.js'];
+    this.jsVendors = ['src/vendors/js/custom-select/build/custom-select.min.js'];
   }
 
 }

@@ -1,3 +1,7 @@
+.scheme__img {
+  @include Transition(3, transform);
+}
+
 @include Screen-md {
 
   .scheme__img {

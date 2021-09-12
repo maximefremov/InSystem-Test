@@ -1,3 +1,138 @@
 .form__select {
   display: none;
+
+  &-outer {
+    font-size: Rem(18px);
+  }
+  &-container {
+    position: relative;
+    width: 100%;
+  }
+  &-opener {
+    @include Transition(2);
+    align-items: center;
+    background-color: rgba($color_base-white, 0.85);
+    border: 1px solid $color_base-white;
+    border-radius: 3px;
+    color: $color_midnight-20;
+    cursor: pointer;
+    display: flex;
+    line-height: 22px;
+    outline: 0;
+    overflow: hidden;
+    padding: 12px 10px;
+    position: relative;
+    text-overflow: ellipsis;
+    user-select: none;
+    white-space: nowrap;
+    width: 100%;
+
+    &::after, &::before {
+      @include Transition(3);
+      border: solid;
+      border-width: 0 1px 1px 0;
+      content: "";
+      margin: -3px 15px 0 auto;
+      padding: 3px;
+      position: absolute;
+      right: 0;
+    }
+    &::before {
+      border-color: $color_base-black;
+      transform: rotate(45deg);
+    }
+    &::after {
+      border-color: $color_base-white;
+      margin-top: 3px;
+      opacity: 0;
+      transform: rotate(-135deg);
+      visibility: hidden;
+    }
+  }
+  &-panel {
+    max-height: 172px;
+    overflow-x: hidden;
+    overflow-y: auto;
+    padding: 2px 0;
+    scrollbar-color: $color_blue-30 $color_midnight-10;
+    scrollbar-width: thin;
+
+    &-wrapper {
+      @include Transition(2);
+      background-color: rgba($color_midnight-20, 0.9);
+      border: 1px solid $color_midnight-10;
+      border-radius: 0 0 3px 3px;
+      cursor: pointer;
+      left: 0;
+      opacity: 0;
+      padding: 3px 4px;
+      position: absolute;
+      user-select: none;
+      visibility: hidden;
+      width: 100%;
+    }
+    &::-webkit-scrollbar {
+      width: 7px;
+    }
+    &::-webkit-scrollbar-track {
+      background-color: $color_midnight-10;
+      border-radius: 3px;
+    }
+    &::-webkit-scrollbar-thumb {
+      background-color: $color_blue-30;
+      border-radius: 3px;
+    }
+  }
+  &-item {
+    @include Transition(1, color);
+    color: $color_base-white;
+    padding: 3px 6px;
+
+    &:hover {
+      color: $color_blue-20;
+    }
+    &:first-child {
+      display: none;
+    }
+  }
+}
+
+.form__select--open {
+
+  .form__select-opener {
+    background-color: rgba($color_midnight-10, 0.85);
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+    color: $color_base-white;
+
+    &::before {
+      opacity: 0;
+      visibility: hidden;
+    }
+    &::after {
+      opacity: 1;
+      visibility: visible;
+    }
+  }
+  .form__select-panel-wrapper {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+@include Screen-md {
+
+  .form__select {
+
+    &-outer {
+      font-size: Rem(16px);
+    }
+    &-opener {
+      line-height: 19px;
+      padding: 10px;
+    }
+    &-panel {
+      max-height: 185px;
+    }
+  }
 }

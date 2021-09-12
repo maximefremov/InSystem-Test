@@ -3,6 +3,10 @@
   display: flex;
   flex: 1;
   flex-direction: column;
+
+  &:hover .scheme__img {
+    transform: translate3d(0, -5px, 0);
+  }
 }
 
 @include Screen-md {
@@ -11,6 +15,10 @@
     flex-basis: 50%;
     flex-direction: row;
     margin-bottom: 15px;
+
+    &:hover .scheme__img {
+      transform: none;
+    }
   }
   .scheme__item:nth-child(2n - 1) {
     padding-right: 10px;

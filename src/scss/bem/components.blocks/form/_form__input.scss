@@ -1,17 +1,21 @@
 .form__input {
   @include Transition(2);
   background-color: rgba($color_base-white, 0.85);
-  border: 2px solid $color_base-white;
+  border: 1px solid $color_base-white;
   border-radius: 3px;
   color: $color_base-black;
   font-size: Rem(18px);
   line-height: 22px;
-  padding: 11px 10px;
+  padding: 12px 10px;
   width: 100%;
 
   &:focus {
-    background-color: $color_base-white;
-    border-color: $color_blue-30;
+    background-color: rgba($color_midnight-10, 0.85);
+    color: $color_base-white;
+
+    &::placeholder {
+      color: inherit;
+    }
   }
   &::placeholder {
     color: $color_midnight-20;

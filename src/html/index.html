@@ -7,9 +7,9 @@
   <meta name="robots" content="noindex, nofollow">
   <title>InSystem Test</title>
   <meta name="description" content="InSystem Test Page">
-  <script src="custom-select.min.js"></script>
-  <script src="script.min.js"></script>
-  <link href="style.min.css" rel="stylesheet">
+  <script src="js/custom-select.min.js"></script>
+  <script src="js/script.min.js"></script>
+  <link href="css/style.min.css" rel="stylesheet">
 </head>
 <body class="body">
   <header class="header">
@@ -135,13 +135,11 @@
           </div>
           <div class="checkout__form-outer">
             <form class="form checkout__form" action="/" method="POST">
-
-              <div class="form__row checkout__form-row">
-
-                <div class="form__select-outer checkout__form-item">
+              <div class="form__row">
+                <div class="form__item form__select-outer">
                   <select class="form__select" id="checkout__form-type"
                           name="checkout__form-type" autocomplete="off" placeholder="Выберите тип системы">
-
+                    <option value="">Выберите тип системы</option>
                     <option value="Sed ut perspiciatis">Sed ut perspiciatis</option>
                     <option value="Nemo enim ipsam">Nemo enim ipsam</option>
                     <option value="Et harum quidem">Et harum quidem</option>
@@ -154,25 +152,30 @@
                     <option value="Itaque earum rerum 2">Itaque earum rerum 2</option>
                   </select>
                 </div>
-
-                <input class="form__input checkout__form-item" id="checkout__form-email" name="checkout__form-email" type="email" placeholder="Ваш e-mail">
-                <input class="form__input checkout__form-item" id="checkout__form-name" name="checkout__form-name" type="text" placeholder="Ваше имя">
+                <div class="form__item form__input-outer">
+                  <input class="form__input" id="checkout__form-email" name="checkout__form-email" type="email" placeholder="Ваш e-mail">
+                </div>
+                <div class="form__item form__input-outer">
+                  <input class="form__input" id="checkout__form-name" name="checkout__form-name" type="text" placeholder="Ваше имя">
+                </div>
               </div>
-              <div class="form__row checkout__form-row">
-                <div class="form__range-outer checkout__form-item checkout__form-range">
+              <div class="form__row">
+                <div class="form__item form__range-outer checkout__form-range-outer">
                   <label class="form__range-label" for="checkout__form-range">
                     Sed ut perspiciatis, unde omnis iste natus<span class="form__range-percent"></span>
                   </label>
                   <input class="form__range" id="checkout__form-range" name="checkout__form-range" type="range" min="0" max="100" value="75">
                 </div>
-                <div class="form__file-outer checkout__form-item checkout__form-file">
+                <div class="form__item form__file-outer checkout__form-file-outer">
                   <input class="form__file" id="checkout__form-file" name="checkout__form-file" type="file">
                   <button class="button button--big form__file-button"><i class="form__file-icon"></i>Прикрепить файл</button>
                 </div>
               </div>
-              <div class="form__row checkout__form-row">
-                <input class="button button--blue button--big checkout__form-submit"
-                       id="checkout__form-submit" name="checkout__form-submit" type="submit" value="Отправить">
+              <div class="form__row">
+                <div class="form__item checkout__form-submit-outer">
+                  <input class="button button--blue button--big checkout__form-submit"
+                  id="checkout__form-submit" name="checkout__form-submit" type="submit" value="Отправить">
+                </div>
               </div>
             </form>
           </div>
