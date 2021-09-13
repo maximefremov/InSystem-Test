@@ -19,6 +19,7 @@ class App {
 
     const headerMenu = new HeaderMenu();
     const scrollTo = new ScrollTo();
+    const formEls = new FormEls();
 
     window.onresize = function() {
       windowWidth = this.innerWidth;
@@ -39,59 +40,10 @@ class App {
     window.dispatchEvent(new Event('resize'));
 
     this._heroAnimate();
-    this._formFile();
-    this._formRange();
-    this._formSelect();
   }
 
   _heroAnimate() {
     document.querySelector('.hero').classList.add('hero--animated');
-  }
-
-  _formFile() {
-    const iconEl = '<i class="form__file-icon"></i>';
-    const buttonEls = document.querySelectorAll('.form__file-button');
-    const fileEls = document.querySelectorAll('.form__file');
-
-    buttonEls.forEach(el => el.addEventListener('click', function(e) {
-      e.preventDefault();
-      el.parentNode.querySelector('.form__file').click();
-    }));
-    fileEls.forEach(el => el.addEventListener('change', () => {
-      if (!this.files.length) return;
-
-      const buttonEl = el.parentNode.querySelector('.form__file-button');
-      buttonEl.innerHTML = iconEl + this.files[0].name;
-      buttonEl.classList.add('form__file--changed');
-    }));
-  }
-
-  _formRange() {
-    const rangeEls = document.querySelectorAll('.form__range');
-    const onInput = function(el) {
-      const percentEl = el.parentNode.querySelector('.form__range-percent');
-      percentEl.textContent = el.value + '%';
-    };
-
-    rangeEls.forEach((el) => {
-      el.addEventListener('input', () => {
-        onInput(el);
-      });
-      onInput(el);
-    });
-  }
-
-  _formSelect() {
-    customSelect('.form__select', {
-      containerClass: 'form__select-container',
-      openerClass: 'form__select-opener',
-      panelWrapperClass: 'form__select-panel-wrapper',
-      panelClass: 'form__select-panel',
-      optionClass: 'form__select-item',
-      isSelectedClass: 'form__select-item--selected',
-      hasFocusClass: 'form__select-item--focus',
-      isOpenClass: 'form__select--open'
-    });
   }
 
 }
